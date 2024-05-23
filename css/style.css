@@ -1,0 +1,132 @@
+:root {
+    --dark: #121826a6;
+    --white: #e5e7eb;
+    --red: #c93b76;
+    --grey: #4d5562;
+    --dark-grey: #212936;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: "Inter", sans-serif;
+    min-height: 100vh;
+    width: 100vw;
+    position: relative;
+    background-image: url("../images/bg.jpg");
+    touch-action: none;
+    padding: 128px;
+  }
+  
+  .container {
+    background-color: var(--dark);
+    width: fit-content;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 18px;
+    text-align: center;
+  }
+  
+  .cover {
+    height: 280px;
+    width: 300px;
+    border-radius: 16px;
+    display: block;
+  }
+  
+  .title {
+    color: var(--white);
+    margin-bottom: 4px;
+    margin-top: 16px;
+    font-weight: 600;
+  }
+  
+  .author {
+    color: var(--grey);
+    font-size: 12px;
+    margin-bottom: 24px;
+  }
+  
+  .commands {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 20px;
+    margin-top: 36px;
+    margin-bottom: 8px;
+  }
+  
+  .play {
+    background-color: var(--red);
+    height: 50px;
+    width: 50px;
+    border: none;
+    border-radius: 50%;
+    color: var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0 0 10px 2px #c93b7667;
+  }
+  
+  .play img {
+    display: none;
+  }
+  
+  .play img.active {
+    display: inline;
+  }
+  
+  .step {
+    height: 40px;
+    width: 40px;
+    border: none;
+    border: 8px;
+    background-color: transparent;
+    color: var(--grey);
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .times {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 4px;
+    color: var(--grey);
+    font-size: 10px;
+  }
+  
+  .progress {
+    background-color: var(--white);
+    height: 4px;
+    width: 100%;
+    border-radius: 2px;
+    cursor: pointer;
+  }
+  
+  .progress-inner {
+    background-color: var(--red);
+    height: 4px;
+    width: 0%;
+    position: relative;
+    border-radius: 2px;
+    box-shadow: 0 0 10px 2px #c93b7667;
+  }
+  
+  .progress-track {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: transparent;
+    right: -10px;
+    top: -5px;
+    border-radius: 50%;
+    cursor: pointer;
+  }
